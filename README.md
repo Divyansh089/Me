@@ -105,4 +105,3 @@ I'm always open to discussing new opportunities, collaborations, or just having 
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
