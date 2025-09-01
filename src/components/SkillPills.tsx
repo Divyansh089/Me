@@ -88,19 +88,19 @@ export default function SkillPills() {
         </div>
 
         {/* Additional Skills */}
-        <div className="mt-16 text-center">
-          <div className="card max-w-2xl mx-auto">
-            <div className="flex items-center justify-center gap-3 mb-4">
+        <div className="mt-16">
+          <div className="card">
+            <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-lg bg-gradient-to-r from-primary-cyan to-primary-green">
                 <Zap className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold">Performance & Quality</h3>
             </div>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap gap-3">
               {['Gas Optimization', 'Smart Contract Security', 'Code Quality', 'Testing', 'Documentation'].map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-1 bg-primary-violet/10 border border-primary-violet/20 rounded-full text-sm font-medium text-primary-violet"
+                  className="px-4 py-2 bg-muted border border-border rounded-full text-sm font-medium hover:border-primary-cyan transition-colors cursor-default hover:scale-105 transform"
                 >
                   {skill}
                 </span>
