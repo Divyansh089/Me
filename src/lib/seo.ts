@@ -1,6 +1,6 @@
-import { DefaultSeoProps } from 'next-seo';
+import { Metadata } from 'next';
 
-export const defaultSEO: DefaultSeoProps = {
+export const defaultSEO: Metadata = {
   title: 'Divyansh Patel — Blockchain Developer',
   description: 'Blockchain Developer building secure, scalable Web3 applications. Solidity • Hardhat • Ethers.js • IPFS • Node.js',
   openGraph: {
@@ -20,30 +20,19 @@ export const defaultSEO: DefaultSeoProps = {
     ],
   },
   twitter: {
-    handle: '@divyansh_patel',
-    site: '@divyansh_patel',
-    cardType: 'summary_large_image',
+    card: 'summary_large_image',
+    title: 'Divyansh Patel — Blockchain Developer',
+    description: 'Blockchain Developer building secure, scalable Web3 applications',
+    images: ['/images/og.png'],
   },
-  additionalMetaTags: [
-    {
-      name: 'keywords',
-      content: 'blockchain, developer, solidity, web3, ethereum, smart contracts, dapp, defi',
-    },
-    {
-      name: 'author',
-      content: 'Divyansh Patel',
-    },
-  ],
-  additionalLinkTags: [
-    {
-      rel: 'icon',
-      href: '/favicon.ico',
-    },
-    {
-      rel: 'canonical',
-      href: 'https://divyansh-patel.vercel.app',
-    },
-  ],
+  keywords: ['blockchain', 'developer', 'solidity', 'web3', 'ethereum', 'smart contracts', 'dapp', 'defi'],
+  authors: [{ name: 'Divyansh Patel' }],
+  icons: {
+    icon: '/favicon.ico',
+  },
+  alternates: {
+    canonical: 'https://divyansh-patel.vercel.app',
+  },
 };
 
 export const personSchema = {
