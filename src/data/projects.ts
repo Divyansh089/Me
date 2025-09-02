@@ -55,3 +55,4 @@ export const projects: Project[] = [
     image: "/images/ecommerce.png"
   }
 ];
+
