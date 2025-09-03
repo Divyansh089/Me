@@ -22,7 +22,7 @@ export const projects: Project[] = [
     ],
     repo: "https://github.com/Divyansh089/supply-chain-management",
     live: "https://quick-safe-psi.vercel.app/",
-    image: "/images/quicksafe.png"
+    image: "/images/pic2.png"
   },
   {
     title: "TrustMed — Decentralized Healthcare",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     ],
     repo: "https://github.com/Divyansh089/TrustMed",
     live: "https://trust-med-beta.vercel.app/",
-    image: "/images/trustmed.png"
+    image: "/images/pic1.png"
   },
   {
     title: "E-Commerce App",
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     ],
     repo: "https://github.com/Divyansh089/Apple-store",
     live: "https://apple-store-ten-chi.vercel.app/",
-    image: "/images/ecommerce.png"
+    image: "/images/pic3.png"
   }
 ];
 
