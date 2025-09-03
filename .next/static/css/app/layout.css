@@ -1121,6 +1121,10 @@ video {
 .bg-\[length\:20px_20px\] {
   background-size: 20px 20px;
 }
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .p-1\.5 {
   padding: 0.375rem;
 }

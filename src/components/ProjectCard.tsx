@@ -14,11 +14,14 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
     <div className="card group cursor-pointer hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full">
       {/* Project Image */}
       <div className="relative mb-6 overflow-hidden rounded-lg flex-shrink-0">
-        <div className="aspect-video bg-gradient-to-br from-primary-violet/20 to-primary-cyan/20 flex items-center justify-center">
-          <div className="text-center text-foreground/50">
-            <div className="text-4xl mb-2">🚀</div>
-            <div className="text-sm">Project Image</div>
-          </div>
+        <div className="aspect-video relative">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover rounded-lg"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
       </div>
